@@ -321,6 +321,13 @@ ActivityStreams.prototype = {
     this._store.dispatch(am.actions.Response("PREFS_RESPONSE", simplePrefs.prefs));
 
     this._store.dispatch(am.actions.Response("SHARE_PROVIDERS_RESPONSE", this._shareProvider.socialProviders));
+
+    if (this._autoRefresh == null) {
+      this._autoRefresh = setTimeout(() => {
+        this._autoRefresh = null;
+        this._refreshAppState();
+      }, 2000);
+    }
   },
 
   _respondOpenWindow({msg}) {
