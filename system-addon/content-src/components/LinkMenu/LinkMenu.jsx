@@ -2,7 +2,7 @@ const React = require("react");
 const {injectIntl} = require("react-intl");
 const ContextMenu = require("content-src/components/ContextMenu/ContextMenu");
 const {actionCreators: ac} = require("common/Actions.jsm");
-const linkMenuOptions = require("content-src/lib/link-menu-options");
+const {LinkMenuOptions} = require("content-src/lib/link-menu-options");
 const DEFAULT_SITE_MENU_OPTIONS = ["CheckPinTopSite", "Separator", "OpenInNewWindow", "OpenInPrivateWindow", "Separator", "BlockUrl"];
 
 class LinkMenu extends React.PureComponent {
@@ -13,7 +13,7 @@ class LinkMenu extends React.PureComponent {
     // Handle special case of default site
     const propOptions = !site.isDefault ? props.options : DEFAULT_SITE_MENU_OPTIONS;
 
-    const options = propOptions.map(o => linkMenuOptions[o](site, index, source)).map(option => {
+    const options = propOptions.map(o => LinkMenuOptions[o](site, index, source)).map(option => {
       const {action, impression, id, type, userEvent} = option;
       if (!type && id) {
         option.label = props.intl.formatMessage(option);
