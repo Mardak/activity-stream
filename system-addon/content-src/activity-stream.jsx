@@ -3,10 +3,10 @@ const ReactDOM = require("react-dom");
 const Base = require("content-src/components/Base/Base");
 const {Provider} = require("react-redux");
 const {reducers} = require("common/Reducers.jsm");
-const {addSnippetsSubscriber} = require("content-src/lib/snippets");
 const {actionTypes: at, actionCreators: ac} = require("common/Actions.jsm");
 
 import {DetectUserSessionStart} from "content-src/lib/detect-user-session-start";
+import {addSnippetsSubscriber} from "content-src/lib/snippets";
 import {initStore} from "content-src/lib/init-store";
 
 const store = initStore(reducers, global.gActivityStreamPrerenderedState);
