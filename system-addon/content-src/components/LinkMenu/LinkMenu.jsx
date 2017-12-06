@@ -1,6 +1,6 @@
 const React = require("react");
 const {injectIntl} = require("react-intl");
-const ContextMenu = require("content-src/components/ContextMenu/ContextMenu");
+const {ContextMenu} = require("content-src/components/ContextMenu/ContextMenu");
 const {actionCreators: ac} = require("common/Actions.jsm");
 const {LinkMenuOptions} = require("content-src/lib/link-menu-options");
 const DEFAULT_SITE_MENU_OPTIONS = ["CheckPinTopSite", "Separator", "OpenInNewWindow", "OpenInPrivateWindow", "Separator", "BlockUrl"];

@@ -2,7 +2,7 @@ const React = require("react");
 const {shallow} = require("enzyme");
 const {shallowWithIntl} = require("test/unit/utils");
 const {_unconnected: LinkMenu} = require("content-src/components/LinkMenu/LinkMenu");
-const ContextMenu = require("content-src/components/ContextMenu/ContextMenu");
+const {ContextMenu} = require("content-src/components/ContextMenu/ContextMenu");
 const {IntlProvider} = require("react-intl");
 const messages = require("data/locales.json")["en-US"];
 
