@@ -3,7 +3,8 @@ module.exports = {
   "parserOptions": {
     "ecmaFeatures": {
       "jsx": true
-    }
+    },
+    "sourceType": "module"
   },
   "env": {
     "mocha": true,
@@ -19,7 +20,8 @@ module.exports = {
   "plugins": [
     "json", // require("eslint-plugin-json")
     "promise", // require("eslint-plugin-promise")
-    "react" // require("eslint-plugin-react")
+    "react", // require("eslint-plugin-react")
+    "import" // require("eslint-plugin-import")
   ],
   "extends": [
     "eslint:recommended",
