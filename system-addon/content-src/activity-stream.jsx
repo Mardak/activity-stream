@@ -4,7 +4,7 @@ const Base = require("content-src/components/Base/Base");
 const {Provider} = require("react-redux");
 const initStore = require("content-src/lib/init-store");
 const {reducers} = require("common/Reducers.jsm");
-const DetectUserSessionStart = require("content-src/lib/detect-user-session-start");
+import {DetectUserSessionStart} from "content-src/lib/detect-user-session-start";
 const {addSnippetsSubscriber} = require("content-src/lib/snippets");
 const {actionTypes: at, actionCreators: ac} = require("common/Actions.jsm");
 
