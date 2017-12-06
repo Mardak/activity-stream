@@ -4,7 +4,7 @@ const {FormattedMessage} = require("react-intl");
 
 const TopSitesEdit = require("./TopSitesEdit");
 const {TopSiteList} = require("./TopSite");
-const CollapsibleSection = require("content-src/components/CollapsibleSection/CollapsibleSection");
+const {CollapsibleSection} = require("content-src/components/CollapsibleSection/CollapsibleSection");
 const ComponentPerfTimer = require("content-src/components/ComponentPerfTimer/ComponentPerfTimer");
 const {actionCreators: ac, actionTypes: at} = require("common/Actions.jsm");
 const {MIN_RICH_FAVICON_SIZE, MIN_CORNER_FAVICON_SIZE} = require("./TopSitesConstants");

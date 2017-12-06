@@ -1,11 +1,10 @@
 const React = require("react");
 const {connect} = require("react-redux");
 const {injectIntl, FormattedMessage} = require("react-intl");
-const Card = require("content-src/components/Card/Card");
-const {PlaceholderCard} = Card;
+const {Card, PlaceholderCard} = require("content-src/components/Card/Card");
 const Topics = require("content-src/components/Topics/Topics");
 const {actionCreators: ac} = require("common/Actions.jsm");
-const CollapsibleSection = require("content-src/components/CollapsibleSection/CollapsibleSection");
+const {CollapsibleSection} = require("content-src/components/CollapsibleSection/CollapsibleSection");
 const ComponentPerfTimer = require("content-src/components/ComponentPerfTimer/ComponentPerfTimer");
 
 const VISIBLE = "visible";
