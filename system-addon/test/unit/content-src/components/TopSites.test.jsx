@@ -9,7 +9,7 @@ const {TopSite, TopSiteLink, TopSitePlaceholder, TopSiteList} = require("content
 const {_unconnected: TopSites} = require("content-src/components/TopSites/TopSites");
 
 const {actionTypes: at, actionCreators: ac} = require("common/Actions.jsm");
-const LinkMenu = require("content-src/components/LinkMenu/LinkMenu");
+const {LinkMenu} = require("content-src/components/LinkMenu/LinkMenu");
 const {TOP_SITES_DEFAULT_LENGTH, TOP_SITES_SHOWMORE_LENGTH} = require("common/Reducers.jsm");
 const {MIN_RICH_FAVICON_SIZE, MIN_CORNER_FAVICON_SIZE} = require("content-src/components/TopSites/TopSitesConstants");
 

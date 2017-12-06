@@ -1,5 +1,5 @@
 const React = require("react");
-const LinkMenu = require("content-src/components/LinkMenu/LinkMenu");
+const {LinkMenu} = require("content-src/components/LinkMenu/LinkMenu");
 const {FormattedMessage} = require("react-intl");
 const cardContextTypes = require("./types");
 const {actionCreators: ac, actionTypes: at} = require("common/Actions.jsm");

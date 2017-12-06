@@ -3,7 +3,7 @@ const {shallow} = require("enzyme");
 const {mountWithIntl} = require("test/unit/utils");
 const Card = require("content-src/components/Card/Card");
 const {PlaceholderCard} = Card;
-const LinkMenu = require("content-src/components/LinkMenu/LinkMenu");
+const {LinkMenu} = require("content-src/components/LinkMenu/LinkMenu");
 const {actionTypes: at, actionCreators: ac} = require("common/Actions.jsm");
 const cardContextTypes = require("content-src/components/Card/types");
 

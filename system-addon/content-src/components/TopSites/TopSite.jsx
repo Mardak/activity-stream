@@ -1,7 +1,7 @@
 const React = require("react");
 const {actionCreators: ac, actionTypes: at} = require("common/Actions.jsm");
 
-const LinkMenu = require("content-src/components/LinkMenu/LinkMenu");
+const {LinkMenu} = require("content-src/components/LinkMenu/LinkMenu");
 
 const {TOP_SITES_SOURCE, TOP_SITES_CONTEXT_MENU_OPTIONS, MIN_RICH_FAVICON_SIZE, MIN_CORNER_FAVICON_SIZE} = require("./TopSitesConstants");
 
