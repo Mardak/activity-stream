@@ -1,8 +1,8 @@
-const React = require("react");
-const {shallow} = require("enzyme");
-const {actionTypes: at, actionCreators: ac} = require("common/Actions.jsm");
-const createMockRaf = require("mock-raf");
-const ComponentPerfTimer = require("content-src/components/ComponentPerfTimer/ComponentPerfTimer");
+import {actionCreators as ac, actionTypes as at} from "common/Actions.jsm";
+import {ComponentPerfTimer} from "content-src/components/ComponentPerfTimer/ComponentPerfTimer";
+import React from "react";
+import createMockRaf from "mock-raf";
+import {shallow} from "enzyme";
 
 const perfSvc = {
   mark() {},

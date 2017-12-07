@@ -5,7 +5,7 @@ const {Card, PlaceholderCard} = require("content-src/components/Card/Card");
 const Topics = require("content-src/components/Topics/Topics");
 const {actionCreators: ac} = require("common/Actions.jsm");
 const {CollapsibleSection} = require("content-src/components/CollapsibleSection/CollapsibleSection");
-const ComponentPerfTimer = require("content-src/components/ComponentPerfTimer/ComponentPerfTimer");
+const {ComponentPerfTimer} = require("content-src/components/ComponentPerfTimer/ComponentPerfTimer");
 
 const VISIBLE = "visible";
 const VISIBILITY_CHANGE_EVENT = "visibilitychange";
