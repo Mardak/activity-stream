@@ -1,13 +1,13 @@
-const {
-  actionTypes: at,
-  actionCreators: ac,
-  actionUtils: au,
-  MAIN_MESSAGE_TYPE,
-  CONTENT_MESSAGE_TYPE,
-  UI_CODE,
+import {
   BACKGROUND_PROCESS,
+  CONTENT_MESSAGE_TYPE,
+  MAIN_MESSAGE_TYPE,
+  UI_CODE,
+  actionCreators as ac,
+  actionTypes as at,
+  actionUtils as au,
   globalImportContext
-} = require("common/Actions.jsm");
+} from "common/Actions.jsm";
 
 describe("Actions", () => {
   it("should set globalImportContext to UI_CODE", () => {
