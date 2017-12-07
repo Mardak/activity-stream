@@ -1,6 +1,6 @@
 const React = require("react");
 const ReactDOM = require("react-dom/server");
-const Base = require("content-src/components/Base/Base");
+const {Base} = require("content-src/components/Base/Base");
 const {Provider} = require("react-redux");
 const {initStore} = require("content-src/lib/init-store");
 const {reducers, INITIAL_STATE} = require("common/Reducers.jsm");

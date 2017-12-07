@@ -1,6 +1,6 @@
 const React = require("react");
 const ReactDOM = require("react-dom");
-const Base = require("content-src/components/Base/Base");
+const {Base} = require("content-src/components/Base/Base");
 const {Provider} = require("react-redux");
 const {reducers} = require("common/Reducers.jsm");
 const {actionTypes: at, actionCreators: ac} = require("common/Actions.jsm");
