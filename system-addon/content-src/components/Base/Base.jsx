@@ -1,7 +1,7 @@
 const React = require("react");
 const {connect} = require("react-redux");
 const {addLocaleData, IntlProvider} = require("react-intl");
-const TopSites = require("content-src/components/TopSites/TopSites");
+const {TopSites} = require("content-src/components/TopSites/TopSites");
 const {Search} = require("content-src/components/Search/Search");
 const {ConfirmDialog} = require("content-src/components/ConfirmDialog/ConfirmDialog");
 const {ManualMigration} = require("content-src/components/ManualMigration/ManualMigration");
