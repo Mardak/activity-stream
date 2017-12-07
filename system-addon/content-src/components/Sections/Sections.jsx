@@ -1,11 +1,11 @@
-const React = require("react");
-const {connect} = require("react-redux");
-const {injectIntl, FormattedMessage} = require("react-intl");
-const {Card, PlaceholderCard} = require("content-src/components/Card/Card");
-const {Topics} = require("content-src/components/Topics/Topics");
-const {actionCreators: ac} = require("common/Actions.jsm");
-const {CollapsibleSection} = require("content-src/components/CollapsibleSection/CollapsibleSection");
-const {ComponentPerfTimer} = require("content-src/components/ComponentPerfTimer/ComponentPerfTimer");
+import {Card, PlaceholderCard} from "content-src/components/Card/Card";
+import {FormattedMessage, injectIntl} from "react-intl";
+import {CollapsibleSection} from "content-src/components/CollapsibleSection/CollapsibleSection";
+import {ComponentPerfTimer} from "content-src/components/ComponentPerfTimer/ComponentPerfTimer";
+import React from "react";
+import {Topics} from "content-src/components/Topics/Topics";
+import {actionCreators as ac} from "common/Actions.jsm";
+import {connect} from "react-redux";
 
 const VISIBLE = "visible";
 const VISIBILITY_CHANGE_EVENT = "visibilitychange";
@@ -15,7 +15,7 @@ function getFormattedMessage(message) {
   return typeof message === "string" ? <span>{message}</span> : <FormattedMessage {...message} />;
 }
 
-class Section extends React.PureComponent {
+export class Section extends React.PureComponent {
   _dispatchImpressionStats() {
     const {props} = this;
     const maxCards = 3 * props.maxRows;
@@ -180,9 +180,9 @@ Section.defaultProps = {
   title: ""
 };
 
-const SectionIntl = injectIntl(Section);
+export const SectionIntl = injectIntl(Section);
 
-class Sections extends React.PureComponent {
+export class _Sections extends React.PureComponent {
   render() {
     const sections = this.props.Sections;
     return (
@@ -195,7 +195,4 @@ class Sections extends React.PureComponent {
   }
 }
 
-module.exports = connect(state => ({Sections: state.Sections, Prefs: state.Prefs}))(Sections);
-module.exports._unconnected = Sections;
-module.exports.SectionIntl = SectionIntl;
-module.exports._unconnectedSection = Section;
+export const Sections = connect(state => ({Sections: state.Sections, Prefs: state.Prefs}))(_Sections);

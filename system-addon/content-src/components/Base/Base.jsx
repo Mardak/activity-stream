@@ -6,7 +6,7 @@ const {Search} = require("content-src/components/Search/Search");
 const {ConfirmDialog} = require("content-src/components/ConfirmDialog/ConfirmDialog");
 const {ManualMigration} = require("content-src/components/ManualMigration/ManualMigration");
 const {PreferencesPane} = require("content-src/components/PreferencesPane/PreferencesPane");
-const Sections = require("content-src/components/Sections/Sections");
+const {Sections} = require("content-src/components/Sections/Sections");
 const {actionTypes: at, actionCreators: ac} = require("common/Actions.jsm");
 const {PrerenderData} = require("common/PrerenderData.jsm");
 
