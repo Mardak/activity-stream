@@ -1,16 +1,16 @@
 /* global Services */
 
-const injector = require("inject!lib/TelemetryFeed.jsm");
-const {GlobalOverrider, FakePrefs} = require("test/unit/utils");
-const {actionCreators: ac, actionTypes: at} = require("common/Actions.jsm");
-const {
+import {
   BasePing,
-  UndesiredPing,
-  UserEventPing,
   ImpressionStatsPing,
   PerfPing,
-  SessionPing
-} = require("test/schemas/pings");
+  SessionPing,
+  UndesiredPing,
+  UserEventPing
+} from "test/schemas/pings";
+import {GlobalOverrider, FakePrefs} from "test/unit/utils";
+import {actionCreators as ac, actionTypes as at} from "common/Actions.jsm";
+import injector from "inject!lib/TelemetryFeed.jsm";
 
 const FAKE_UUID = "{foo-123-foo}";
 
