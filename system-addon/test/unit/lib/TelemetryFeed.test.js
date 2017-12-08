@@ -8,7 +8,7 @@ import {
   UndesiredPing,
   UserEventPing
 } from "test/schemas/pings";
-import {GlobalOverrider, FakePrefs} from "test/unit/utils";
+import {FakePrefs, GlobalOverrider} from "test/unit/utils";
 import {actionCreators as ac, actionTypes as at} from "common/Actions.jsm";
 import injector from "inject!lib/TelemetryFeed.jsm";
 
