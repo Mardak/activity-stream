@@ -1,4 +1,4 @@
-const {PrerenderData, _PrerenderData} = require("common/PrerenderData.jsm");
+import {PrerenderData, _PrerenderData} from "common/PrerenderData.jsm";
 
 describe("_PrerenderData", () => {
   describe("properties", () => {
