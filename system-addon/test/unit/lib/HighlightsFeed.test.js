@@ -1,9 +1,10 @@
 "use strict";
-const injector = require("inject!lib/HighlightsFeed.jsm");
-const {Screenshots} = require("lib/Screenshots.jsm");
-const {GlobalOverrider} = require("test/unit/utils");
-const {actionTypes: at} = require("common/Actions.jsm");
-const {Dedupe} = require("common/Dedupe.jsm");
+
+import {Dedupe} from "common/Dedupe.jsm";
+import {GlobalOverrider} from "test/unit/utils";
+import {Screenshots} from "lib/Screenshots.jsm";
+import {actionTypes as at} from "common/Actions.jsm";
+import injector from "inject!lib/HighlightsFeed.jsm";
 
 const FAKE_LINKS = new Array(9).fill(null).map((v, i) => ({url: `http://www.site${i}.com`}));
 const FAKE_IMAGE = "data123";
