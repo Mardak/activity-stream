@@ -1,6 +1,6 @@
 /* globals assert, beforeEach, describe, it */
-const {_PerfService} = require("common/PerfService.jsm");
-const {FakePerformance} = require("test/unit/utils.js");
+import {FakePerformance} from "test/unit/utils.js";
+import {_PerfService} from "common/PerfService.jsm";
 
 let perfService;
 
