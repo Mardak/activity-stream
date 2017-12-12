@@ -1,8 +1,8 @@
-import {FormattedMessage, injectIntl} from "react-intl";
-import {TOP_SITES_DEFAULT_LENGTH, TOP_SITES_SHOWMORE_LENGTH} from "common/Reducers.jsm";
 import {actionCreators as ac, actionTypes as at} from "common/Actions.jsm";
-import React from "react";
 import {connect} from "react-redux";
+import {FormattedMessage, injectIntl} from "react-intl";
+import React from "react";
+import {TOP_SITES_DEFAULT_LENGTH, TOP_SITES_SHOWMORE_LENGTH} from "common/Reducers.jsm";
 
 const getFormattedMessage = message =>
   (typeof message === "string" ? <span>{message}</span> : <FormattedMessage {...message} />);

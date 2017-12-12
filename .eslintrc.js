@@ -208,7 +208,7 @@ module.exports = {
     "require-yield": 2,
     "semi": [2, "always"],
     "semi-spacing": [2, {"before": false, "after": true}],
-    "sort-imports": 2,
+    "sort-imports": [2, {"ignoreCase": true, "memberSyntaxSortOrder": ["none", "all", "other"]}],
     "sort-vars": 2,
     // Override this until eslint-plugin-mozilla gets updated.
     "space-before-function-paren": ["error", {

@@ -1,4 +1,4 @@
-import {FakePrefs, addNumberReducer} from "test/unit/utils";
+import {addNumberReducer, FakePrefs} from "test/unit/utils";
 import {createStore} from "redux";
 import injector from "inject!lib/Store.jsm";
 

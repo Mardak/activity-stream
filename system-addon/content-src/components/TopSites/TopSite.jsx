@@ -1,11 +1,11 @@
+import {actionCreators as ac, actionTypes as at} from "common/Actions.jsm";
+import {LinkMenu} from "content-src/components/LinkMenu/LinkMenu";
 import {
   MIN_CORNER_FAVICON_SIZE,
   MIN_RICH_FAVICON_SIZE,
   TOP_SITES_CONTEXT_MENU_OPTIONS,
   TOP_SITES_SOURCE
 } from "./TopSitesConstants";
-import {actionCreators as ac, actionTypes as at} from "common/Actions.jsm";
-import {LinkMenu} from "content-src/components/LinkMenu/LinkMenu";
 import React from "react";
 
 export const TopSiteLink = props => {

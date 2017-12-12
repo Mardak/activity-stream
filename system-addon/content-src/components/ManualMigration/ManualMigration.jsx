@@ -1,7 +1,7 @@
 import {actionCreators as ac, actionTypes as at} from "common/Actions.jsm";
+import {connect} from "react-redux";
 import {FormattedMessage} from "react-intl";
 import React from "react";
-import {connect} from "react-redux";
 
 /**
  * Manual migration component used to start the profile import wizard.

@@ -1,11 +1,11 @@
 import {actionCreators as ac, actionTypes as at} from "common/Actions.jsm";
+import {addSnippetsSubscriber} from "content-src/lib/snippets";
 import {Base} from "content-src/components/Base/Base";
 import {DetectUserSessionStart} from "content-src/lib/detect-user-session-start";
+import {initStore} from "content-src/lib/init-store";
 import {Provider} from "react-redux";
 import React from "react";
 import ReactDOM from "react-dom";
-import {addSnippetsSubscriber} from "content-src/lib/snippets";
-import {initStore} from "content-src/lib/init-store";
 import {reducers} from "common/Reducers.jsm";
 
 const store = initStore(reducers, global.gActivityStreamPrerenderedState);

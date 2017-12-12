@@ -1,7 +1,7 @@
-import {FormattedMessage, injectIntl} from "react-intl";
-import {TOP_SITES_DEFAULT_LENGTH, TOP_SITES_SHOWMORE_LENGTH} from "common/Reducers.jsm";
 import {actionCreators as ac, actionTypes as at} from "common/Actions.jsm";
+import {FormattedMessage, injectIntl} from "react-intl";
 import React from "react";
+import {TOP_SITES_DEFAULT_LENGTH, TOP_SITES_SHOWMORE_LENGTH} from "common/Reducers.jsm";
 import {TOP_SITES_SOURCE} from "./TopSitesConstants";
 import {TopSiteForm} from "./TopSiteForm";
 import {TopSiteList} from "./TopSite";

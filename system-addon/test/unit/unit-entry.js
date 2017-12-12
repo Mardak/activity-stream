@@ -1,7 +1,7 @@
-import {EventEmitter, FakePerformance, FakePrefs, GlobalOverrider} from "test/unit/utils";
 import Adapter from "enzyme-adapter-react-15";
 import {chaiAssertions} from "test/schemas/pings";
 import enzyme from "enzyme";
+import {EventEmitter, FakePerformance, FakePrefs, GlobalOverrider} from "test/unit/utils";
 
 enzyme.configure({adapter: new Adapter()});
 

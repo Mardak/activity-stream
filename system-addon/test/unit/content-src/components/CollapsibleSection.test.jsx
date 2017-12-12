@@ -1,5 +1,5 @@
-import {_CollapsibleSection as CollapsibleSection, Disclaimer, Info} from "content-src/components/CollapsibleSection/CollapsibleSection";
 import {actionCreators as ac, actionTypes as at} from "common/Actions.jsm";
+import {_CollapsibleSection as CollapsibleSection, Disclaimer, Info} from "content-src/components/CollapsibleSection/CollapsibleSection";
 import {mountWithIntl, shallowWithIntl} from "test/unit/utils";
 import React from "react";
 

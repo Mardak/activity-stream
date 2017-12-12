@@ -1,4 +1,4 @@
-import {PrerenderData, _PrerenderData} from "common/PrerenderData.jsm";
+import {_PrerenderData, PrerenderData} from "common/PrerenderData.jsm";
 
 describe("_PrerenderData", () => {
   describe("properties", () => {

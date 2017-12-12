@@ -1,9 +1,9 @@
-import {Card, PlaceholderCard} from "content-src/components/Card/Card";
 import {actionCreators as ac, actionTypes as at} from "common/Actions.jsm";
-import {LinkMenu} from "content-src/components/LinkMenu/LinkMenu";
-import React from "react";
+import {Card, PlaceholderCard} from "content-src/components/Card/Card";
 import {cardContextTypes} from "content-src/components/Card/types";
+import {LinkMenu} from "content-src/components/LinkMenu/LinkMenu";
 import {mountWithIntl} from "test/unit/utils";
+import React from "react";
 import {shallow} from "enzyme";
 
 let DEFAULT_PROPS = {

@@ -1,6 +1,6 @@
 /* globals assert, beforeEach, describe, it */
-import {FakePerformance} from "test/unit/utils.js";
 import {_PerfService} from "common/PerfService.jsm";
+import {FakePerformance} from "test/unit/utils.js";
 
 let perfService;
 

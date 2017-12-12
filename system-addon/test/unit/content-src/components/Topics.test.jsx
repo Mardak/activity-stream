@@ -1,7 +1,7 @@
-import {Topic, Topics} from "content-src/components/Topics/Topics";
 import React from "react";
 import {shallow} from "enzyme";
 import {shallowWithIntl} from "test/unit/utils";
+import {Topic, Topics} from "content-src/components/Topics/Topics";
 
 describe("<Topics>", () => {
   it("should render a Topics element", () => {

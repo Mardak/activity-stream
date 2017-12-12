@@ -1,14 +1,14 @@
+import {actionCreators as ac, actionTypes as at} from "common/Actions.jsm";
+import {addNumberReducer, GlobalOverrider} from "test/unit/utils";
 import {
   EARLY_QUEUED_ACTIONS,
   INCOMING_MESSAGE_NAME,
+  initStore,
   MERGE_STORE_ACTION,
   OUTGOING_MESSAGE_NAME,
-  initStore,
   queueEarlyMessageMiddleware,
   rehydrationMiddleware
 } from "content-src/lib/init-store";
-import {GlobalOverrider, addNumberReducer} from "test/unit/utils";
-import {actionCreators as ac, actionTypes as at} from "common/Actions.jsm";
 
 describe("initStore", () => {
   let globals;

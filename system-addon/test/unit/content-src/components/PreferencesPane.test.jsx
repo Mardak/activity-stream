@@ -1,7 +1,7 @@
-import {PreferencesInput, _PreferencesPane as PreferencesPane} from "content-src/components/PreferencesPane/PreferencesPane";
 import {actionCreators as ac, actionTypes as at} from "common/Actions.jsm";
-import {mountWithIntl, shallowWithIntl} from "test/unit/utils";
 import {FormattedMessage} from "react-intl";
+import {mountWithIntl, shallowWithIntl} from "test/unit/utils";
+import {PreferencesInput, _PreferencesPane as PreferencesPane} from "content-src/components/PreferencesPane/PreferencesPane";
 import React from "react";
 import {shallow} from "enzyme";
 

@@ -1,7 +1,7 @@
 "use strict";
+import {actionTypes as at} from "common/Actions.jsm";
 import {FaviconFeed} from "lib/FaviconFeed.jsm";
 import {GlobalOverrider} from "test/unit/utils";
-import {actionTypes as at} from "common/Actions.jsm";
 
 const FAKE_ENDPOINT = "https://foo.com/";
 

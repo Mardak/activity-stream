@@ -1,6 +1,6 @@
 import {actionCreators as ac, actionTypes as at} from "common/Actions.jsm";
-import React from "react";
 import {perfService as perfSvc} from "common/PerfService.jsm";
+import React from "react";
 
 // Currently record only a fixed set of sections. This will prevent data
 // from custom sections from showing up or from topstories.

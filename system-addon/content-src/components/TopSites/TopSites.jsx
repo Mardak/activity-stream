@@ -1,12 +1,12 @@
-import {MIN_CORNER_FAVICON_SIZE, MIN_RICH_FAVICON_SIZE} from "./TopSitesConstants";
 import {actionCreators as ac, actionTypes as at} from "common/Actions.jsm";
 import {CollapsibleSection} from "content-src/components/CollapsibleSection/CollapsibleSection";
 import {ComponentPerfTimer} from "content-src/components/ComponentPerfTimer/ComponentPerfTimer";
+import {connect} from "react-redux";
 import {FormattedMessage} from "react-intl";
+import {MIN_CORNER_FAVICON_SIZE, MIN_RICH_FAVICON_SIZE} from "./TopSitesConstants";
 import React from "react";
 import {TopSiteList} from "./TopSite";
 import {TopSitesEdit} from "./TopSitesEdit";
-import {connect} from "react-redux";
 
 /**
  * Iterates through TopSites and counts types of images.

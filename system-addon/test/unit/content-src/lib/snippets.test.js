@@ -1,10 +1,10 @@
+import {actionCreators as ac, actionTypes as at} from "common/Actions.jsm";
 import {
+  addSnippetsSubscriber,
   SNIPPETS_UPDATE_INTERVAL_MS,
   SnippetsMap,
-  SnippetsProvider,
-  addSnippetsSubscriber
+  SnippetsProvider
 } from "content-src/lib/snippets.js";
-import {actionCreators as ac, actionTypes as at} from "common/Actions.jsm";
 import {combineReducers, createStore} from "redux";
 import {GlobalOverrider} from "test/unit/utils";
 import {INCOMING_MESSAGE_NAME} from "content-src/lib/init-store";

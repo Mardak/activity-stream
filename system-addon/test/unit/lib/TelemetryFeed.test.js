@@ -1,5 +1,6 @@
 /* global Services */
 
+import {actionCreators as ac, actionTypes as at} from "common/Actions.jsm";
 import {
   BasePing,
   ImpressionStatsPing,
@@ -9,7 +10,6 @@ import {
   UserEventPing
 } from "test/schemas/pings";
 import {FakePrefs, GlobalOverrider} from "test/unit/utils";
-import {actionCreators as ac, actionTypes as at} from "common/Actions.jsm";
 import injector from "inject!lib/TelemetryFeed.jsm";
 
 const FAKE_UUID = "{foo-123-foo}";

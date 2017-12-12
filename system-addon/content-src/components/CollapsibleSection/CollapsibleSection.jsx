@@ -1,5 +1,5 @@
-import {FormattedMessage, injectIntl} from "react-intl";
 import {actionCreators as ac, actionTypes as at} from "common/Actions.jsm";
+import {FormattedMessage, injectIntl} from "react-intl";
 import React from "react";
 
 const VISIBLE = "visible";

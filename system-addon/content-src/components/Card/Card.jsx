@@ -1,8 +1,8 @@
 import {actionCreators as ac, actionTypes as at} from "common/Actions.jsm";
+import {cardContextTypes} from "./types";
 import {FormattedMessage} from "react-intl";
 import {LinkMenu} from "content-src/components/LinkMenu/LinkMenu";
 import React from "react";
-import {cardContextTypes} from "./types";
 
 // Keep track of pending image loads to only request once
 const gImageLoading = new Map();

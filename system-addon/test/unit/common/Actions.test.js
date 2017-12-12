@@ -1,12 +1,12 @@
 import {
-  BACKGROUND_PROCESS,
-  CONTENT_MESSAGE_TYPE,
-  MAIN_MESSAGE_TYPE,
-  UI_CODE,
   actionCreators as ac,
   actionTypes as at,
   actionUtils as au,
-  globalImportContext
+  BACKGROUND_PROCESS,
+  CONTENT_MESSAGE_TYPE,
+  globalImportContext,
+  MAIN_MESSAGE_TYPE,
+  UI_CODE
 } from "common/Actions.jsm";
 
 describe("Actions", () => {

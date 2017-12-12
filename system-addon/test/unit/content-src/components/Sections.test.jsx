@@ -1,8 +1,8 @@
-import {Section, SectionIntl, _Sections as Sections} from "content-src/components/Sections/Sections";
+import {actionTypes as at} from "common/Actions.jsm";
 import {mountWithIntl, shallowWithIntl} from "test/unit/utils";
 import {PlaceholderCard} from "content-src/components/Card/Card";
 import React from "react";
-import {actionTypes as at} from "common/Actions.jsm";
+import {Section, SectionIntl, _Sections as Sections} from "content-src/components/Sections/Sections";
 import {shallow} from "enzyme";
 
 describe("<Sections>", () => {

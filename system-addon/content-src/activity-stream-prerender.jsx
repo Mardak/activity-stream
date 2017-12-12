@@ -1,11 +1,11 @@
-import {INITIAL_STATE, reducers} from "common/Reducers.jsm";
+import {actionTypes as at} from "common/Actions.jsm";
 import {Base} from "content-src/components/Base/Base";
+import {INITIAL_STATE, reducers} from "common/Reducers.jsm";
+import {initStore} from "content-src/lib/init-store";
 import {PrerenderData} from "common/PrerenderData.jsm";
 import {Provider} from "react-redux";
 import React from "react";
 import ReactDOM from "react-dom/server";
-import {actionTypes as at} from "common/Actions.jsm";
-import {initStore} from "content-src/lib/init-store";
 
 /**
  * prerenderStore - Generate a store with the initial state required for a prerendered page

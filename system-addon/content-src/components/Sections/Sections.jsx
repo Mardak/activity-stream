@@ -1,11 +1,11 @@
+import {actionCreators as ac} from "common/Actions.jsm";
 import {Card, PlaceholderCard} from "content-src/components/Card/Card";
-import {FormattedMessage, injectIntl} from "react-intl";
 import {CollapsibleSection} from "content-src/components/CollapsibleSection/CollapsibleSection";
 import {ComponentPerfTimer} from "content-src/components/ComponentPerfTimer/ComponentPerfTimer";
+import {connect} from "react-redux";
+import {FormattedMessage, injectIntl} from "react-intl";
 import React from "react";
 import {Topics} from "content-src/components/Topics/Topics";
-import {actionCreators as ac} from "common/Actions.jsm";
-import {connect} from "react-redux";
 
 const VISIBLE = "visible";
 const VISIBILITY_CHANGE_EVENT = "visibilitychange";

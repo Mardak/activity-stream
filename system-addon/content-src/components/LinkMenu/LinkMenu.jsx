@@ -1,8 +1,8 @@
+import {actionCreators as ac} from "common/Actions.jsm";
 import {ContextMenu} from "content-src/components/ContextMenu/ContextMenu";
+import {injectIntl} from "react-intl";
 import {LinkMenuOptions} from "content-src/lib/link-menu-options";
 import React from "react";
-import {actionCreators as ac} from "common/Actions.jsm";
-import {injectIntl} from "react-intl";
 
 const DEFAULT_SITE_MENU_OPTIONS = ["CheckPinTopSite", "Separator", "OpenInNewWindow", "OpenInPrivateWindow", "Separator", "BlockUrl"];
 

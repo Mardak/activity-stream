@@ -1,7 +1,7 @@
 import {actionCreators as ac, actionTypes as at} from "common/Actions.jsm";
 import {ComponentPerfTimer} from "content-src/components/ComponentPerfTimer/ComponentPerfTimer";
-import React from "react";
 import createMockRaf from "mock-raf";
+import React from "react";
 import {shallow} from "enzyme";
 
 const perfSvc = {

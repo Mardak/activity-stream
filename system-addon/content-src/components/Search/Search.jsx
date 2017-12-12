@@ -1,10 +1,10 @@
 /* globals ContentSearchUIController */
 "use strict";
+import {actionCreators as ac} from "common/Actions.jsm";
+import {connect} from "react-redux";
 import {FormattedMessage, injectIntl} from "react-intl";
 import {IS_NEWTAB} from "content-src/lib/constants";
 import React from "react";
-import {actionCreators as ac} from "common/Actions.jsm";
-import {connect} from "react-redux";
 
 export class _Search extends React.PureComponent {
   constructor(props) {

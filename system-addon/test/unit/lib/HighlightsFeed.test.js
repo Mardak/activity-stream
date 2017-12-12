@@ -1,10 +1,10 @@
 "use strict";
 
+import {actionTypes as at} from "common/Actions.jsm";
 import {Dedupe} from "common/Dedupe.jsm";
 import {GlobalOverrider} from "test/unit/utils";
-import {Screenshots} from "lib/Screenshots.jsm";
-import {actionTypes as at} from "common/Actions.jsm";
 import injector from "inject!lib/HighlightsFeed.jsm";
+import {Screenshots} from "lib/Screenshots.jsm";
 
 const FAKE_LINKS = new Array(9).fill(null).map((v, i) => ({url: `http://www.site${i}.com`}));
 const FAKE_IMAGE = "data123";
