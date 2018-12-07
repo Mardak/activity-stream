@@ -28,6 +28,84 @@
         @include context-menu-open-left;
       }
     }
+
+    &.pocket-hero {
+      .card-context {
+        display: none;
+      }
+
+      .card-score {
+        display: block;
+      }
+
+      li:first-child {
+        grid-column-start: 1;
+        grid-column-end: 5;
+
+        .card-preview-image-outer {
+          border-radius: 3px 0 0 3px;
+          height: 100%;
+          width: 740px;
+        }
+
+        .card-details {
+          height: 100%;
+          overflow: hidden;
+          position: absolute;
+          top: -5px;
+          left: 740px;
+        }
+
+        .card-text {
+          max-height: 300px;
+        }
+
+        .card-title,
+        .card-description {
+          font-size: 1.8em;
+          line-height: 1.3em;
+        }
+
+        .card-description {
+          margin-top: 10px;
+        }
+      }
+
+      li:not(:first-child) {
+        height: 270px;
+
+        .card-description {
+          display: none;
+        }
+      }
+    }
+
+    &.pocket-list {
+      display: block;
+
+      .card-outer {
+        height: 100px;
+        margin-bottom: 5px;
+      }
+
+      .card-preview-image-outer {
+        border-radius: 3px 0 0 3px;
+        height: 100%;
+        width: 200px;
+      }
+
+      .card-details {
+        height: 100%;
+        overflow: hidden;
+        position: absolute;
+        top: -5px;
+        left: 195px;
+      }
+
+      .card-context {
+        display: none;
+      }
+    }
   }
 
   .section-empty-state {
@@ -90,7 +168,7 @@
   .sections-list {
     // Compact cards stay the same size but normal cards get bigger.
     .normal-cards {
-      .section-list {
+      .section-list:not(.pocket-hero) {
         grid-template-columns: repeat(auto-fit, $card-width-large);
       }
     }

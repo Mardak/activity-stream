@@ -141,7 +141,7 @@ export class Section extends React.PureComponent {
     }
   }
 
-  render() {
+  render() { // eslint-disable-line complexity
     const {
       id, eventSource, title, icon, rows, Pocket, topics,
       emptyState, dispatch, compactCards, read_more_endpoint,
@@ -181,9 +181,11 @@ export class Section extends React.PureComponent {
     // Otherwise, we should show placeholders.
     const shouldShowEmptyState = initialized && !rows.length;
 
+    const cardsShort = [];
+    const cardsT = [];
     const cards = [];
     if (!shouldShowEmptyState) {
-      for (let i = 0; i < maxCards; i++) {
+      for (let i = 0; i < realRows.length; i++) {
         const link = realRows[i];
         // On narrow viewports, we only show 3 cards per row. We'll mark the rest as
         // .hide-for-narrow to hide in CSS via @media query.
@@ -194,7 +196,7 @@ export class Section extends React.PureComponent {
         if (!usePlaceholder && i === 2 && waitingForSpoc) {
           usePlaceholder = true;
         }
-        cards.push(!usePlaceholder ? (
+        (link.title.length < 45 ? cardsShort : link.title[0] === "T" ? cardsT : cards).push(!usePlaceholder ? ( // eslint-disable-line no-nested-ternary
           <Card key={i}
             index={i}
             className={className}
@@ -218,6 +220,20 @@ export class Section extends React.PureComponent {
     // <Section> <-- React component
     // <section> <-- HTML5 element
     return (<ComponentPerfTimer {...this.props}>
+      <CollapsibleSection className={`${sectionClassName} compact-cards`} icon={icon}
+        title={"Short (Title) Reads"}
+        dispatch={this.props.dispatch}>
+        <ul className="section-list pocket-hero" style={{padding: 0}}>
+          {cardsShort.slice(0, 5)}
+        </ul>
+      </CollapsibleSection>
+      <CollapsibleSection className={sectionClassName} icon={icon}
+        title={"'T'ee is the Key"}
+        dispatch={this.props.dispatch}>
+        <ul className="section-list pocket-list" style={{padding: 0}}>
+          {cardsT.slice(0, 5)}
+        </ul>
+      </CollapsibleSection>
       <CollapsibleSection className={sectionClassName} icon={icon}
         title={title}
         id={id}

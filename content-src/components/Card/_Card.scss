@@ -149,7 +149,8 @@
     word-wrap: break-word;
   }
 
-  .card-context {
+  .card-context,
+  .card-score {
     bottom: 0;
     color: var(--newtab-text-secondary-color);
     display: flex;
@@ -171,6 +172,10 @@
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+  }
+
+  .card-score {
+    display: none;
   }
 }
 

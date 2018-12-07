@@ -242,6 +242,9 @@ export class _Card extends React.PureComponent {
               {intlID && !link.context && <div className="card-context-label"><FormattedMessage id={intlID} defaultMessage="Visited" /></div>}
               {link.context && <div className="card-context-label">{link.context}</div>}
             </div>
+            <div className="card-score">
+              {`${(link.score * 100).toFixed(0)} ranking score`}
+            </div>
           </div>
         </div>
       </a>
